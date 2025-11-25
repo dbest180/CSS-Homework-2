@@ -1,1 +1,148 @@
+/* Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
 
+/* Skip to Main Content Link */
+a.skip {
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  z-index: 1;
+}
+
+a.skip:focus {
+  top: 0;
+}
+
+/* Header Styles */
+header {
+  background-color: #2e7d32;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Navigation Styles */
+nav {
+  background-color: #1b5e20;
+  padding: 10px;
+  display: inline-block;
+  width: 80%;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 15px;
+}
+
+/* Style only the image inside nav */
+nav img {
+  width: 10%;
+}
+
+/* Main Content Styles */
+main {
+  background-color: #ffffff;
+  font-size: 18px;
+  padding: 30px;
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #a5d6a7;
+}
+
+/* List Item Styles - COMMENTED OUT as per instructions */
+/* 
+li {
+  display: inline;
+  width: 100px;
+}
+*/
+
+/* Heading Styles */
+h1 {
+  text-align: center;
+  font-family: Georgia, serif;
+  color: #ffffff;
+}
+
+/* Paragraph Styles */
+p {
+  line-height: 1.6;
+}
+
+/* Grid Layout for Image Galleries */
+.grid {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+}
+
+/* Style only images inside grid */
+.grid img {
+  width: 100%;
+  height: auto;
+}
+
+/* Flex Layout */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  
+  header {
+    padding: 15px 10px;
+  }
+  
+  nav {
+    width: 95%;
+  }
+  
+  nav img {
+    width: 20%;
+  }
+  
+  h1 {
+    font-size: 1.5em;
+  }
+  
+  main {
+    padding: 20px 15px;
+    margin: 10px;
+    font-size: 16px;
+  }
+  
+  .grid {
+    grid-template-columns: 100%;
+  }
+  
+  footer {
+    padding: 15px 10px;
+    font-size: 0.9em;
+  }
+}
